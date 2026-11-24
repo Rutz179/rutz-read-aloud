@@ -1,0 +1,95 @@
+{
+  "RRA": {
+    "Title": "Read chat aloud",
+    "Open": "On/off, voice, speed",
+    "MenuHint": "Turn reading on or off, pick the voice and speed.",
+    "Hint": "Reads chat lines aloud <b>on this computer only</b>.",
+    "On": "Read aloud",
+    "Voice": "Voice",
+    "VoiceHint": "Open Foundry in <b>Edge</b> for natural voices (✦).",
+    "Rate": "Speed",
+    "Test": "Try",
+    "Sample": "Ezren, we're short on coin, so we head for the first town we see.",
+    "Keys": "Keys: <b>Alt+S</b> stop · <b>Alt+R</b> repeat · <b>Alt+T</b> on/off. Headphones recommended.",
+    "NoSpeech": "This browser can't speak text.",
+    "NoVoices": "Looking for voices… (open this again in a moment)",
+    "Unknown": "words you don't understand",
+    "Link": "link",
+    "TurnedOn": "Reading chat aloud.",
+    "TurnedOff": "Stopped reading chat aloud.",
+    "Stop": "Stop",
+    "Settings": {
+      "enabled": {
+        "Name": "Read chat aloud",
+        "Hint": "Reads typed chat lines aloud. This computer only."
+      },
+      "rate": {
+        "Name": "Reading speed",
+        "Hint": "1 = normal, 2 = twice as fast."
+      },
+      "volume": {
+        "Name": "Reading volume",
+        "Hint": ""
+      },
+      "speaker": {
+        "Name": "Speaker's name",
+        "Hint": "Whether to say who is speaking before the line.",
+        "Choices": {
+          "change": "Only when the speaker changes",
+          "always": "Every line",
+          "never": "Never"
+        }
+      },
+      "whispers": {
+        "Name": "Also read whispers to me",
+        "Hint": ""
+      },
+      "own": {
+        "Name": "Also read my own lines",
+        "Hint": ""
+      },
+      "catchUp": {
+        "Name": "Catch up when behind",
+        "Hint": "Reads faster when lines pile up; skips the oldest if far behind."
+      },
+      "allVoices": {
+        "Name": "Show voices in every language",
+        "Hint": "Off: only voices that read Korean, plus English and Japanese."
+      },
+      "autoCast": {
+        "Name": "Give characters without a voice one of their own",
+        "Hint": "Gives each voiceless character a fixed voice and speed. Off: default voice."
+      }
+    },
+    "Bind": {
+      "stop": "Read aloud: stop",
+      "repeat": "Read aloud: say the last line again",
+      "toggle": "Read aloud: on/off"
+    },
+    "Group": {
+      "ko": "Korean",
+      "multi": "Multilingual (read Korean too)",
+      "en": "English",
+      "ja": "Japanese",
+      "other": "Other languages"
+    },
+    "Cast": {
+      "Title": "Character voices",
+      "Hint": "Set a voice and speed per character. Pitch works only on voices without ✦.",
+      "Default": "Default voice",
+      "Auto": "Automatic (one per character)",
+      "FromGm": "GM's choice: {voice}",
+      "Pitch": "Pitch (1 = as is)",
+      "Clear": "Clear this computer's choice",
+      "None": "No characters yet. The party and whoever speaks in chat show up here.",
+      "Drop": "Drop an actor on this window to add it.",
+      "Share": "Make these everyone's default",
+      "ShareHint": "Saves this list as everyone's default. Personal choices come first.",
+      "Shared": "Saved {n} character voices as everyone's default.",
+      "Sample": "This is {name}. I'll read with this voice.",
+      "Speed": "Speed (1 = the reading speed above)",
+      "NoPitch": "This voice can't change pitch."
+    },
+    "NeedClick": "Read aloud: click the page once to start."
+  }
+}

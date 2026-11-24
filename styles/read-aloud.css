@@ -1,0 +1,29 @@
+/* Rutz's Read Aloud — the voice window */
+.rra-window .window-content { display: flex; flex-direction: column; overflow: hidden; max-height: calc(100vh - 60px); }
+.rra-window.minimized .window-content { display: none; }
+.rra { display: flex; flex-direction: column; gap: 8px; flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.rra > * { flex: none; }
+.rra .row { display: flex; gap: 6px; align-items: center; }
+.rra .row.small { font-size: 0.9rem; }
+.rra .row input[type=text] { flex: 1; }
+.rra .row button { width: auto; flex: 0 0 auto; }
+.rra .f { font-weight: 600; margin-top: 4px; display: block; }
+.rra .hint { font-size: 0.85rem; line-height: 1.5; color: var(--color-text-subtle, #888); margin: 0; }
+.rra .hint.warn { color: #c0392b; }
+.rra select, .rra input[type=range] { width: 100%; }
+.rra .two { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 12px; align-items: end; }
+.rra h3 { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid var(--color-border-light-tertiary, rgba(128, 128, 128, 0.35)); font-size: 1.05rem; border-bottom: none; display: flex; align-items: center; gap: 8px; }
+
+/* one row per character: face · name · voice · pitch · try · clear */
+.rra .cast { display: flex; flex-direction: column; gap: 6px; flex: 0 1 auto; min-height: 0; max-height: 340px; overflow-y: auto; padding-right: 2px; }
+.rra .cast > * { flex: none; }
+.rra-window.sized .rra .cast { flex: 1 1 auto; min-height: 120px; max-height: none; }
+.rra .cast-row { display: grid; grid-template-columns: 32px minmax(0, 0.9fr) minmax(0, 1.5fr) 128px auto auto; gap: 8px; align-items: center; padding: 4px 6px; border: 1px solid var(--color-border-light-tertiary, rgba(128, 128, 128, 0.3)); border-radius: 6px; }
+.rra .cast-row img, .rra .cast-row .noimg { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; object-position: top; border: none; display: flex; align-items: center; justify-content: center; background: rgba(128, 128, 128, 0.2); }
+.rra .cast-row .nm { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rra .cast-row select { min-width: 0; }
+.rra .cast-row .pitch { display: grid; grid-template-columns: 14px 1fr 30px; gap: 4px; align-items: center; font-size: 0.8rem; }
+.rra .cast-row .pitch output { font-variant-numeric: tabular-nums; text-align: right; }
+.rra .cast-row button { width: 28px; height: 28px; min-height: 0; padding: 0; display: inline-flex; align-items: center; justify-content: center; }
+.rra .share .hint { flex: 1; }
+.rra .drop { font-style: italic; }
